@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опросы со страницы "ВКонтакте" А. Летучего</title>
+    <style type="text/css">
+        title {font-size: 20pt; alignment: center}
+    body {background:#f5f4ff}
+    p {text-indent: 20px; color:#151543;font-family: Cambria;  font-size: 15pt;}
+    .inform {font-size: 500%}
+    button, input {
+    border: 2px solid cornflowerblue;
+    border-radius: 20px;
+    font-size: 18pt;
+    background-color: aliceblue;
+}
+input {
+border: 2px dotted cornflowerblue;
+}
+td {
+vertical-align: bottom;
+}
+</style>
+</head>
+<body leftmargin="50" rightmargin="50" topmargin="30" bottommargin="30">
+<h1>Опросы со страницы "ВКонтакте" А. Летучего</h1>
+<p>Просим вас пройти небольшие опросы со страницы "ВКонтакте" А. Летучего. В каждом из них вам предлагается выбрать,
+    какие из предложений вам кажутся грамматически приемлемыми, а какие нет.</p>
+<form method="GET" action="/stats">
+<p>1. {{ all_questions[0] }}<br />
+    {%  for answer in all_answers[0] %}
+        <input type="radio" name="answ1" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>2. {{ all_questions[1] }}<br />
+    {%  for answer in all_answers[1] %}
+        <input type="radio" name="answ2" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>3. {{ all_questions[2] }}<br />
+    {%  for answer in all_answers[2] %}
+        <input type="radio" name="answ3" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>4. {{ all_questions[3] }}<br />
+    {%  for answer in all_answers[3] %}
+        <input type="radio" name="answ4" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>5. {{ all_questions[4] }}<br />
+    {%  for answer in all_answers[4] %}
+        <input type="radio" name="answ5" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>6. {{ all_questions[5] }}<br />
+    {%  for answer in all_answers[5] %}
+        <input type="radio" name="answ6" value={{ answer}} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>7. {{ all_questions[6] }}<br />
+    {%  for answer in all_answers[6] %}
+        <input type="radio" name="answ7" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>8. {{ all_questions[7] }}<br />
+    {%  for answer in all_answers[7] %}
+        <input type="radio" name="answ8" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>9. {{ all_questions[8] }}<br />
+    {%  for answer in all_answers[8] %}
+        <input type="radio" name="answ9" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>10. {{ all_questions[9] }}<br />
+    {%  for answer in all_answers[9] %}
+        <input type="radio" name="answ10" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>11. {{ all_questions[10] }}<br />
+    {%  for answer in all_answers[10] %}
+        <input type="radio" name="answ11" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>12. {{ all_questions[11] }}<br />
+    {%  for answer in all_answers[11] %}
+        <input type="radio" name="answ12" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>13. {{ all_questions[12] }}<br />
+    {%  for answer in all_answers[12] %}
+        <input type="radio" name="answ13" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>14. {{ all_questions[13] }}<br />
+    {%  for answer in all_answers[13] %}
+        <input type="radio" name="answ14" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>15. {{ all_questions[14] }}<br />
+    {%  for answer in all_answers[14] %}
+        <input type="radio" name="answ15" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>16. {{ all_questions[15] }}<br />
+    {%  for answer in all_answers[15] %}
+        <input type="radio" name="answ16" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>17. {{ all_questions[16] }}<br />
+    {%  for answer in all_answers[16] %}
+        <input type="radio" name="answ17" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>18. {{ all_questions[17] }}<br />
+    {%  for answer in all_answers[17] %}
+        <input type="radio" name="answ18" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>19. {{ all_questions[18] }}<br />
+    {%  for answer in all_answers[18] %}
+        <input type="radio" name="answ19" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>20. {{ all_questions[19] }}<br />
+    {%  for answer in all_answers[19] %}
+        <input type="radio" name="answ20" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>21. {{ all_questions[20] }}<br />
+    {%  for answer in all_answers[20] %}
+        <input type="radio" name="answ21" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>22. {{ all_questions[21] }}<br />
+    {%  for answer in all_answers[21] %}
+        <input type="radio" name="answ22" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>23. {{ all_questions[22] }}<br />
+    {%  for answer in all_answers[22] %}
+        <input type="radio" name="answ23" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>24. {{ all_questions[23] }}<br />
+    {%  for answer in all_answers[23] %}
+        <input type="radio" name="answ24" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>25. {{ all_questions[24] }}<br />
+    {%  for answer in all_answers[24] %}
+        <input type="radio" name="answ25" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>26. {{ all_questions[25] }}<br />
+    {%  for answer in all_answers[25] %}
+        <input type="radio" name="answ26" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>27. {{ all_questions[26] }}<br />
+    {%  for answer in all_answers[26] %}
+        <input type="radio" name="answ27" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>28. {{ all_questions[27] }}<br />
+    {%  for answer in all_answers[27] %}
+        <input type="radio" name="answ28" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+<p>29. {{ all_questions[28] }}<br />
+    {%  for answer in all_answers[28] %}
+        <input type="radio" name="answ29" value={{ answer }} checked="checked" /> {{ answer }}<br />
+    {% endfor %}</p>
+</p> <p align="center" ><button type="submit">Отправить</button>
+    <button type="reset">Очистить</button></p>
+</form>
+</body>
+</html>
